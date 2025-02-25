@@ -14,16 +14,26 @@
       <!-- Dynamically updated image based on the selected county -->
       <img id="county-image" src="images4/Bedfordshire.svg" alt="County Image">
       
+      <div class="correct-answer"></div> <!-- Correct answer display -->
+
       <div class="guess-container">
         <input type="text" id="guess-input" placeholder="Guess the County...">
         <button id="submit-guess">Submit</button>
       </div>
-      
-      <div id="feedback"></div>
-      <div id="attempts-left">Attempts left: 5</div>
 
-      <!-- List of incorrect guesses -->
-      <ul id="incorrect-guesses"></ul>
+      <div id="feedback"></div>
+
+      <div id="attempts-left-container">
+        <input type="text" id="attempts-left" value="Attempts left: 5" disabled>
+        <input type="text" id="attempts-left-4" value="" disabled>
+        <input type="text" id="attempts-left-3" value="" disabled>
+        <input type="text" id="attempts-left-2" value="" disabled>
+        <input type="text" id="attempts-left-1" value="" disabled>
+        <input type="text" id="attempts-left-0" value="" disabled>
+      </div>
+
+      <!-- Reload button to restart the game -->
+      <button id="reload-button">Reload Game</button>
     </div>
   </div>
   <script src="game.js"></script>
